@@ -34,5 +34,5 @@ jQuery.fn.stickyFooter = function() {
 	};
 
 	setSticky();
-	$(window).resize(setSticky);
+	$(window).on('load resize', setSticky);
 };
